@@ -1,12 +1,17 @@
 <template>
   <div class="app">
-    <NuxtPage />
+    <div>
+      <p>Current date: {{ currentDate }}</p>
+      <NuxtPage />
+    </div>
   </div>
   
 </template>
 
 <script setup lang="ts">
 // Global app setup can go here
+import { useState } from '#imports'
+const currentDate = useState('currentDate', () => new Date().toISOString())
 </script>
 
 <style>
