@@ -1,0 +1,22 @@
+# Root ignores
+node_modules/
+.pnpm-store/
+.DS_Store
+*.log
+
+# Editor/OS
+.idea/
+.vscode/
+Thumbs.db
+
+# Env
+.env*
+
+# Lockfiles (pnpm manages this at root)
+package-lock.json
+yarn.lock
+
+# Output
+dist/
+.output/
+.nuxt/
